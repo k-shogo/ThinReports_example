@@ -1,0 +1,9 @@
+.ruby-version
+.DS_Store
+/*.lock
+/.bundle
+/vendor/bundle
+/public/uploads
+/uploads
+/log/*
+/tmp/*
