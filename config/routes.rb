@@ -1,4 +1,11 @@
 ThinReportsExample::Application.routes.draw do
+  resources :estimates do
+    member do
+      get :report
+    end
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

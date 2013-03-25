@@ -1,0 +1,7 @@
+report.set_layout # ! <= Required.
+report.start_new_page
+report.page.values no: @estimate.no
+report.page.values customer: @estimate.customer
+report.page.values total_price: @estimate.total_price
+report.page.values place: @estimate.place
+report.page.values created_at: @estimate.created_at

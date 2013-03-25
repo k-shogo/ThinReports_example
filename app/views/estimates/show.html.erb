@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>No:</b>
+  <%= @estimate.no %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @estimate.customer %>
+</p>
+
+<p>
+  <b>Total price:</b>
+  <%= @estimate.total_price %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @estimate.place %>
+</p>
+
+
+<%= link_to 'pdf', report_estimate_path(@estimate, format: 'pdf') %> |
+<%= link_to 'Edit', edit_estimate_path(@estimate) %> |
+<%= link_to 'Back', estimates_path %>
