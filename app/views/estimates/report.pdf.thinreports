@@ -1,4 +1,4 @@
-report.set_layout # ! <= Required.
+report.set_layout # Required!
 report.start_new_page
 report.page.values no: @estimate.no
 report.page.values customer: @estimate.customer
