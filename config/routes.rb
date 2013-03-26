@@ -5,6 +5,8 @@ ThinReportsExample::Application.routes.draw do
     end
   end
 
+  root to: 'estimates#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

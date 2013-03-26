@@ -3,6 +3,10 @@
 ## シチュエーション
 見積もりのモデル（estimate）のPDFを出力したいと想定
 
+## サンプルの使い方
+bundleしてrails s で起動。  
+routesでrootが指定してあるのでrails起動ポートにアクセスしてください。
+
 ## 用意
 
 ### モデルの用意
@@ -12,7 +16,7 @@
 | --- | ----|
 |customer|見積書番号|
 |place|場所|
-|total_price|見積金額|  
+|total_price|見積金額|
 
 ```
 class Estimate < ActiveRecord::Base
@@ -43,8 +47,8 @@ end
 
 ### Controller
 サンプルでは新たにreportのルーティングを設定したので、
-コントローラーにもメソッドを追加。  
-既存のルーティングにPDF出力機能を持たせたいならば、
+コントローラーにもメソッドを追加。
+既存のルーティングにPDF出力機能を持たせたいならば、  
 respond_toブロックの中にformat.pdfを追加するだけでOK。
 #### app/controllers/estimates_controller.rb
 ```
